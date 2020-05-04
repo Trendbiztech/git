@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+	width:80px;
+	height: auto;
+	line-height: 50px;
+}
+
+.header{
+	justify-content: center;
+}
+
+.nav-item{
+	float: right;
+	margin-left: 200px;
+}
+
+.bgimg{
+	background-color: #000;
+    height: 85vh;
+    background-size: 98.7%;
+    box-shadow-bottom: 2px 0px 10px #000;
+}
+#bgimgtxt{
+    padding: 20 10% 0 10%;
+    background-color: rgba(19, 18, 18, 0.3);
+    height: 85vh;
+}
+#bgimgh1{
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 80px;
+}
+
+#bgimglist{
+    color: #fff;
+    padding: 80px 0;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#bgimgh1, #bgimglist{
+    position: relative;
+    animation-name: textslide;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes textslide{
+    from{top:-400px; color: rgba(255, 255, 255, 0);}
+    to{top:40px; color: rgba(255, 255, 255, 1);}
+}
+
+.bgimg{
+	position: relative;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+    background-color: #000;
+    height: 85vh;
+}
+
+@keyframes slide{
+  0%   {background-image: url(./images/chicken2.jpg);}
+  25%  {background-image: url(./images/broiler2.jpg);}
+  50%  {background-image: url(./images/broiler3.jpg);}
+  75%  {background-image:url(./images/leaf2.jpg);}
+  100% {background-image: url(./images/pig2.jpg);}
+}
+
+@media only screen and (max-width:250px){
+	#bgimgh1, #bgimglist, #btn1{
+		display: block;
+		width: 250px;
+		height: auto;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+}
+}

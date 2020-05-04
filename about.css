@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  top: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body{
+  margin:auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+  margin: 0px;
+  line-height: 30px;
+}
+
+.navbar{
+  position:sticky;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(23,567,89,0.4);
+  line-height: 30px;
+  box-shadow: 2px 0px 9px lightgreen;
+}
+
+.ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+li{
+  list-style-type: none;
+  font-weight: bold;
+  padding: 10px;
+  line-height:30px;
+}
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
+.heading{
+  font-weight: bolder;
+  font-size: 30px;
+  color: green;
+  margin-left: 10px;
+}
+
+.heading, a, li, .ul, .navbar{
+  align-items: center;
+}
+
+.menuitems{
+  margin-left: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.active{
+  padding: 20px;
+  background-color: rgba(164, 231, 164, 0.7);
+  color: black;
+}
+
+a:hover{
+  color:black;
+  text-decoration: none;
+}
+
+.tech{
+  color: green;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0px 2px 8px lightgreen;
+  text-transform: lowercase;
+  font-size: 36px;
+}
+
+.reg{
+  background-color: #052914;
+  width: 150px;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reg:hover{
+  background-color: lightgreen;
+  color:black;
+
+}
+
+.socials{
+  background-color: rgba(109,109,109,0.1);
+  text-align: center;
+  padding: 30px;
+}
+
+.socialimg{
+  width: 30px;
+  height: 30px;
+  margin:10px;
+  cursor: pointer;
+}
+
+#connect{
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.footer{
+  background-color: rgba(164, 231, 164, 0.7);
+  padding:30px;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footermenus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.bgimg{
+  background-image: url(./images/staff2.jpg);
+  background-size: 1600px 250%;
+  background-repeat: no-repeat;
+  }
+
+  .about{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width:50%;
+  }
